@@ -34,7 +34,7 @@ try
 	
 	<section id="liste_atelier">
 		<h2>Liste des ateliers </h2>
-		<div id="ajouter_atelier"><a href="ajout.php">Ajouter un atelier </a></div>
+		<div id="ajouter_atelier"><a href="#">Ajouter un atelier </a></div>
 		
 		<div id="div_liste">
 		<?php

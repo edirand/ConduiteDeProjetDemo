@@ -10,7 +10,7 @@ if(	isset($_POST['titre'])&&
 	isset($_POST['animateur'])&&
 	isset($_POST['partenaires'])&&
 	isset($_POST['id'])&&
-	isset($_POST['lab_id'])
+	isset($_POST['lab_id'])	
 	)
 	{
 		
@@ -28,6 +28,37 @@ if(	isset($_POST['titre'])&&
 		$lab_id = $_POST['lab_id'];
 		$id= $_POST['id'];
 		
+		/* dates*/
+		$dates ='';
+		if(isset($_POST['dates'])){
+			$len = count($_POST['dates']);
+			for($i = 0; $i < $len -1;$i++){
+				$dates .= $_POST['dates'][$i].'|';
+				
+			}
+			$dates .= $_POST['dates'][$len-1];
+		}
+		/* disciplines*/
+		$disciplines ='';
+		if(isset($_POST['disciplines'])){
+			$len = count($_POST['disciplines']);
+			for($i = 0; $i < $len -1;$i++){
+				$disciplines .= $_POST['disciplines'][$i].'|';
+				
+			}
+			$disciplines .= $_POST['disciplines'][$len-1];
+		}
+		/* public*/
+		$public ='';
+		if(isset($_POST['public'])){
+			$len = count($_POST['public']);
+			for($i = 0; $i < $len -1;$i++){
+				$public .= $_POST['public'][$i].'|';
+				
+			}
+			$public .= $_POST['public'][$len-1];
+		}
+		/**/
 		if(is_numeric($capacite)){
 			
 			try
@@ -45,7 +76,10 @@ if(	isset($_POST['titre'])&&
 					resumeAtelier = "'.$resume.'",
 					animateur = "'.$animateur.'",
 					partenaires = "'.$partenaires.'",
-					laboratoire_id = "'.$lab_id.'"
+					laboratoire_id = "'.$lab_id.'",
+					dates = "'.$dates.'",
+					disciplines = "'.$disciplines.'",
+					public = "'.$public.'"
 					Where id = "'.$id.'"';
 				
 				$req = $db -> prepare($sql);
