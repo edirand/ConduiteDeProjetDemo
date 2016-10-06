@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8888/" />
+<title>Test d'ajout US2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test d'ajout US2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ConduiteDeProjetDemo/src/web/accueil.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Ajouter un atelier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=titre</td>
+	<td>Test d'ajout d'un atelier dans la base de données</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=theme</td>
+	<td>Conduite de projet</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=type</td>
+	<td>Test de validation 1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=date1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=date6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lieu</td>
+	<td>Terrasse Front du Médoc, 33000 Bordeaux</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=duree</td>
+	<td>1 min</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=capacite</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=inscription</td>
+	<td>Sans inscription</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=resume</td>
+	<td>Test de validation permettant d'ajouter un atelier dans la base de données puis de retourner à la page d'accueil pour voir qu'il a bien été ajouté dans la liste des ateliers. US#</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=resume</td>
+	<td>Test de validation permettant d'ajouter un atelier dans la base de données puis de retourner à la page d'accueil pour voir qu'il a bien été ajouté dans la liste des ateliers. US#2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=animateur</td>
+	<td>Emilien Dirand (étudiant)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=partenaires</td>
+	<td>Laala Djelouah (étudiant), Samuel Laveau (étudiant)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=public8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=disciplines3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
