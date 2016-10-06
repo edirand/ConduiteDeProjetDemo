@@ -1,4 +1,4 @@
-Drop database CNRSBDD;
+Drop database if exists CNRSBDD;
 
 Create database CNRSBDD;
 
