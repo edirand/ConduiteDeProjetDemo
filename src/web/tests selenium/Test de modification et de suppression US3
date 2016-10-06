@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8888/" />
+<title>Test de modification et de suppression US3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test de modification et de suppression US3</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ConduiteDeProjetDemo/src/web/accueil.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Modifier')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=titre</td>
+	<td>Test de modification d'un atelier dans la base de données</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=type</td>
+	<td>Test de validation 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=date9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=date10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=date7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=date6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lieu</td>
+	<td>Meriadeck, 33000 Bordeaux</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=duree</td>
+	<td>10 min</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=capacite</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=inscription</td>
+	<td>Inscription nécessaire</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=resume</td>
+	<td>Test de validation permettant de modifier et de supprimer un atelier dans la base de données puis de retourner à la page d'accueil pour voir qu'il a bien été modifié/supprimé dans la liste des ateliers. US#3</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=public7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=disciplines1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=modif_submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Modifier')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Supprimer l'atelier</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
